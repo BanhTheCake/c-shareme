@@ -5,7 +5,6 @@ import { AiFillHome, AiFillCloseCircle } from 'react-icons/ai';
 import { googleLogout } from '@react-oauth/google';
 import { useDispatch } from 'react-redux';
 import { handleLogout } from '../features/user/userSlice';
-import { useState } from 'react';
 import { categories } from '../utils/data';
 
 const Sidebar = ({ setToggle, toggle }) => {
@@ -81,7 +80,7 @@ const Sidebar = ({ setToggle, toggle }) => {
                         return (
                             <NavLink
                                 key={category.name}
-                                to={`/category/${category.name}`}
+                                to={`/pin/category/${category.name}`}
                                 className={({ isActive }) => {
                                     return `flex items-center py-1 text-[16px] border-r-2 mb-3 capitalize ${
                                         isActive

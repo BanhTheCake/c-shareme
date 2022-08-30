@@ -4,11 +4,10 @@ import { BiArrowFromTop } from 'react-icons/bi';
 import { useState } from 'react';
 import client from '../../../app/client';
 import { useSelector } from 'react-redux';
-import { v4 as uuidv4, v4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 import { useMemo } from 'react';
 import { useEffect } from 'react';
 import { useCallback } from 'react';
-import { debounce, throttle } from 'lodash'
 import { useRef } from 'react';
 
 const listUserSave = (save) => {
@@ -81,7 +80,7 @@ const Pin = ({ pin }) => {
                 setSave(false);
                 setErr(err.message);
             });
-    }, [newSave, userData.userId])
+    }, [userData.userId])
 
     return (
         <div className="w-full px-3">
@@ -120,7 +119,7 @@ const Pin = ({ pin }) => {
                                 : pin?.destination}
                         </a>
                         <Link
-                            to={`/pinDetails/${pin._id}`}
+                            to={`/pin/details/${pin._id }`}
                             className="w-full h-full border-t-red-400 flex"
                         ></Link>
                     </div>

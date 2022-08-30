@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import UserProfile from "./UserProfile";
 import PinsRouter from "../../pins/PinsRouter";
-import Pins from "../../pins/layout/Pins";
 import { AiOutlineMenuUnfold } from 'react-icons/ai'
 import logo from '../../../assets/logo.png'
 import { useSelector } from "react-redux";
@@ -44,7 +43,7 @@ const Home = () => {
     <div className="md:pl-[230px]">
     <Routes>
       <Route path="/user/:id" element={<UserProfile />} />
-      <Route path="*" element={<PinsRouter />} />
+      <Route path="/*" element={<PinsRouter />} />
     </Routes>
     </div>
   </div>;

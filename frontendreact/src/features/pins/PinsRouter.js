@@ -13,7 +13,7 @@ const PinsRouter = () => {
     <>
     <Routes>
         <Route path="/*" element={<Pins />} />
-        <Route path="/pinDetails/:id" element={<PinDetails />} />
+        <Route path="/pin/details/:id" element={<PinDetails />} />
         <Route path="/pin/create" element={<PinCreated />} />
     </Routes>
     </>

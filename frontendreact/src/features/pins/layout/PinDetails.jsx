@@ -68,7 +68,7 @@ const PinDetails = () => {
                 <p className='capitalize mt-2 mb-2 text-[16px] leading-6'>{pinData?.about}</p>
                 <div className='flex items-center mb-4'>
                     <p>Category: </p>
-                    <Link to={`/category/${pinData.category}`} className="px-2 ml-2 rounded-[2px] text-white font-medium bg-slate-400">{pinData.category}</Link>
+                    <Link to={`/pin/category/${pinData.category}`} className="px-2 ml-2 rounded-[2px] text-white font-medium bg-slate-400">{pinData.category}</Link>
                 </div>
                 <Link to={`/user/${pinData?.userId}`} className='inline-flex px-2 items-center'>
                     <img className='w-[36px] h-[36px] object-cover mr-3 rounded-full' src={pinData?.postedBy?.image} alt="" />

@@ -80,7 +80,7 @@ const FormPinCreated = ({ handleCreateDataToServer, userData, setFormData }) => 
             <p className='text-red-500 text-[15px] px-2 py-1'>{errors.category?.message}</p>
             <div className="w-full flex mt-3">
                 <button
-                    className="ml-auto px-3 py-1 bg-red-500 rounded-[4px] text-white hover:brightness-90 transition-all"
+                    className="ml-auto px-4 py-1 bg-red-500 rounded-[4px] text-white hover:brightness-90 transition-all text-base"
                     type="submit"
                 >
                     Save

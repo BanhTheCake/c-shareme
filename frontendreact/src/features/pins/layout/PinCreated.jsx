@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { AiOutlineCloudDownload } from 'react-icons/ai';
 import { useSelector } from 'react-redux';
 import client from '../../../app/client';
-import { categories } from '../../../utils/data';
 import ScaleLoader from 'react-spinners/ScaleLoader';
 import FormPinCreated from '../components/FormPinCreated';
 import { useNavigate } from 'react-router-dom';

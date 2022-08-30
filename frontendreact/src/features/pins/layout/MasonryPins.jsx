@@ -1,12 +1,7 @@
 import React, { useState } from 'react';
-import { useRef } from 'react';
 import { useEffect } from 'react';
 import Masonry from 'react-masonry-css';
-import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
 import client from '../../../app/client';
-import { pinsQuery } from '../../../utils/data';
-import { handleUpdateCategory } from '../../user/userSlice';
 import Pin from '../components/Pin';
 import ScaleLoader from 'react-spinners/ScaleLoader';
 import { memo } from 'react';
