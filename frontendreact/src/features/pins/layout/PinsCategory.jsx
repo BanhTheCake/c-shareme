@@ -3,11 +3,10 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Route, Routes, useParams } from "react-router-dom";
-import client from "../../../app/client";
 import { pinsQuery } from "../../../utils/data";
 import { handleUpdateCategory } from "../../user/userSlice";
+import MasonryPins from "../components/MasonryPins";
 import Search from "../components/Search";
-import MasonryPins from "./MasonryPins";
 
 const PinsCategory = () => {
 
@@ -34,6 +33,7 @@ const PinsCategory = () => {
 
   return (
     <div className="bg-slate-100 min-h-screen">
+    <Search />
     <MasonryPins query={query}/>
   </div>
   );

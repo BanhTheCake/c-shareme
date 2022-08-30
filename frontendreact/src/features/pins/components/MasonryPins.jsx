@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import Masonry from 'react-masonry-css';
 import client from '../../../app/client';
-import Pin from '../components/Pin';
+import Pin from './Pin';
 import ScaleLoader from 'react-spinners/ScaleLoader';
 import { memo } from 'react';
 

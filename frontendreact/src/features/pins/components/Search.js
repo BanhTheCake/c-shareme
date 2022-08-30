@@ -22,7 +22,7 @@ const Search = () => {
             dispatch(handleUpdateSearchBox(searchBox.toLowerCase()))
         }
         return debounce(func, 300)
-    }, [])
+    }, [dispatch])
 
     const handleOnInput = (e) => {
         setValueInit(e.target.value)

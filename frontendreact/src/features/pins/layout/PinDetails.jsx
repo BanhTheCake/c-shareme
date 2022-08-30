@@ -5,8 +5,8 @@ import client from '../../../app/client';
 import { currentPinQuery, getMorePinQuery } from '../../../utils/data';
 import { BiArrowFromTop } from 'react-icons/bi';
 import { useState } from 'react';
-import MasonryPins from './MasonryPins';
 import ScaleLoader from 'react-spinners/ScaleLoader';
+import MasonryPins from '../components/MasonryPins';
 
 const PinDetails = () => {
     const { id } = useParams();

@@ -10,8 +10,8 @@ import {
     userData,
     userSavedQuery,
 } from '../../../utils/data';
-import MasonryPins from '../../pins/layout/MasonryPins';
 import ScaleLoader from 'react-spinners/ScaleLoader';
+import MasonryPins from '../../pins/components/MasonryPins';
 
 const UserProfile = () => {
     const { id } = useParams();
@@ -91,7 +91,8 @@ const UserProfile = () => {
     }, [switchTag]);
 
     return (
-        <div className='flex'>
+       <>
+         <div className='flex'>
           { isLoading ? <div className='mx-auto mt-8'><ScaleLoader loading={isLoading} /></div>: <div className="flex flex-col w-full animate-fadeIn">
             <div className="w-full h-[250px] shadow-lg">
                 <img
@@ -145,6 +146,7 @@ const UserProfile = () => {
             </div>
         </div> }
         </div>
+       </>
     );
 };
 
